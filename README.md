@@ -2,16 +2,19 @@
 <b>build.gradle(Module:app)</b> 
 
 
-<code>
+```
 apply plugin: 'com.android.application'
+
 apply plugin: 'kotlin-android'
+
 apply plugin: 'kotlin-android-extensions'
+```
 
-// !!!!!!!!!!!!!!!!!  Navigation here !!!!!!!!!!!!!!
-//                      Safe Args
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ <b>!!!!  Navigation here  Safe Args !!!!</b>
+```
 apply plugin: "androidx.navigation.safeargs.kotlin"
-
+```
+```
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
@@ -27,8 +30,9 @@ android {
     }
 
 
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-//                      Important
+ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                      Important
+                      
     compileOptions {
         sourceCompatibility = 1.8
         targetCompatibility = 1.8
@@ -39,9 +43,9 @@ android {
     }
     dataBinding {
         enabled = true
-    }
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
+        }
+        ```
+ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
     buildTypes {
         release {
@@ -75,21 +79,13 @@ dependencies {
     // !!!!!!!!!!!!!!!!!  Drawer layout here !!!!!!!!!!!!!!
     implementation "androidx.drawerlayout:drawerlayout:1.0.0"
 }
+```
 
-
-</code>
 
 
 <b>build.gradle(Project:MyTivia)</b> 
 
-
-
-<code>
-
-
-
-
-
+```
 buildscript {
     ext.kotlin_version = '1.3.71'
 
@@ -125,8 +121,6 @@ task clean(type: Delete) {
 
 
 
-
-</code>
 
 
 
