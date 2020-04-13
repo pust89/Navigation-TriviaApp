@@ -8,10 +8,8 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
-```
 
- <b>!!!!  Navigation here  Safe Args !!!!</b>
-```
+//!!!!  Navigation here  Safe Args !!!!
 apply plugin: "androidx.navigation.safeargs.kotlin"
 ```
 ```
@@ -30,7 +28,7 @@ android {
     }
 
 
- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                       Important
                       
     compileOptions {
@@ -45,7 +43,7 @@ android {
         enabled = true
         }
         ```
- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
     buildTypes {
         release {
